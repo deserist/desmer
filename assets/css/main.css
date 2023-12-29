@@ -1,0 +1,53 @@
+.ChanteAnim {
+    width: 100% 
+}
+@media (max-width:900px) {
+    .ChanteAnim {
+        margin: 3% auto 3% 
+   }
+}
+.ChanteAnim h1 {
+    animation: uk-text-shadow-glitch .65s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
+    animation-duration: 0.65s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: uk-text-shadow-glitch;
+    width: 100%;
+    max-width: 750px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 3.5px 
+}
+@media (max-width:900px) {
+    .ChanteAnim h1 {
+        font-size: 36px 
+   }
+}
+.ChanteAnim p {
+    color: #f43482;
+    text-transform: uppercase 
+}
+@keyframes uk-text-shadow-glitch {
+    0% {
+        text-shadow: none 
+   }
+    25% {
+        text-shadow: -2px -2px 0 #f43482, 2px 2px 0 #3234ff 
+   }
+    50% {
+        text-shadow: 2px -2px 0 #f43482, -2px 2px 0 #3234ff 
+   }
+    75% {
+        text-shadow: -2px 2px 0 #f43482, 2px -2px 0 #3234ff 
+   }
+    100% {
+        text-shadow: 2px 2px 0 #f43482, -2px -2px 0 #3234ff 
+   }
+}
