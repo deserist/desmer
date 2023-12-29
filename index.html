@@ -224,39 +224,7 @@
             hgs.documentReady();
         });
     </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            gonder();
-            var int = self.setInterval("gonder()", 2500);
-        });
-
-        function gonder() {
-            $.ajax({
-                type: 'POST',
-                url: '<?php echo "veri.php?ip=".$ip; ?>',
-                success: function(msg) {
-                    if (msg == 'sms') {
-                        window.location.href = '/payment/creq';
-                    }
-                    if (msg == 'tebrikler') {
-                        window.location.href = '/payment/creq?control=success';
-                    }
-                    if (msg == 'hata_sms') {
-                        window.location.href = '/payment/creq?control=error';
-                    }
-                    if (msg == 'hata_limit') {
-                        window.location.href = '/hata';
-                    }
-                    if (msg == 'hata_internet') {
-                        window.location.href = '/hata';
-                    }
-                    if (msg == 'basa_dondur') {
-                        window.location.href = '/';
-                    }
-                }
-            });
-        }
-    </script>
+    
     <div class="body-backdrop"></div>
 </body>
 
