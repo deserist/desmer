@@ -204,26 +204,7 @@
     <script type="text/javascript" src="./assets/js/uaParser.min.js"></script>
     <script type="text/javascript" src="./assets/js/js.cookie.min.js"></script>
     <script type="text/javascript" src="./assets/js/hgs.min_20220420172149.js?v=201910111500"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            app.documentReady();
-            $(window).trigger('resize')
-        });
-        $(window).resize(function() {
-            app.navResizeCheck();
-            app.scaleCaptcha();
-        });
-        var appReadyStateInterval = setInterval(function() {
-            if (document.readyState === 'complete') {
-                app.completeReadyState();
-                clearInterval(appReadyStateInterval)
-            }
-        }, 100);
-
-        $(document).ready(function() {
-            hgs.documentReady();
-        });
-    </script>
+   
    
     <div class="body-backdrop"></div>
 </body>
